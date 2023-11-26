@@ -11,7 +11,7 @@ function printSplits(data) {
     if (data.result && data.result.splits && data.result.splits.length > 0) {
       console.log('Splits:');
       data.result.splits.forEach((split, index) => {
-        console.log(`\t${split.name}: - Pace: ${split.pace} - Time: ${split.time}`);
+        console.log(`\t${split.name}: \t Pace: ${split.pace} - Time: ${split.time}`);
         // console.log(JSON.stringify(split, null, 2));
       });
     } else {
