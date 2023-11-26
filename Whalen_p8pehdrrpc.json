@@ -1,0 +1,180 @@
+{
+  "id": "60188132-b459-4b15-bdd6-9f0259a28926",
+  "registrant_id": "121da16a-b3f1-4b65-aabb-905ca3d0cee5",
+  "user_id": "83ee2bb2-4735-4381-a0ed-bf879e113ffd",
+  "confirmation_number": "p8pehdrrpc",
+  "registration_status": "Completed",
+  "firstname": "Christopher",
+  "lastname": "Whalen",
+  "age": 37,
+  "sex": "Male",
+  "addresses": [
+    {
+      "line_1": "9114 236TH ST SW APT 2",
+      "line_2": "",
+      "city": "Edmonds",
+      "state": "WA",
+      "postal_code": "98026",
+      "country_code": "US"
+    }
+  ],
+  "bib": "1967",
+  "checkin_time": "2023-11-24 21:30:26",
+  "coupon": null,
+  "coupon_type": null,
+  "price": "0.00",
+  "created": "2023-11-21 08:11:24",
+  "modified": "2023-11-24 21:30:26",
+  "completed": "2023-04-20 17:23:27",
+  "event": {
+    "id": "4b99cfbe-2131-4126-9a0a-6f0ac32af5db",
+    "name": "2023 UW Medicine Seattle Marathon and Half Marathon",
+    "date": {
+      "start": "2023-11-26",
+      "end": "2023-11-26"
+    },
+    "race": {
+      "id": "5db88d20-7cbc-449f-954e-2e7ec0a80a41"
+    },
+    "tenant": {
+      "id": "5ce74843-ec70-4e63-8771-49d65206f5f9",
+      "name": "Seattle Marathon"
+    },
+    "timezone": "America/Los_Angeles",
+    "location": {
+      "name": null,
+      "zip": null,
+      "coordinates": {
+        "latitude": null,
+        "longitude": null
+      }
+    },
+    "images": {
+      "hub": {
+        "header": "https://s3.amazonaws.com/assets.hub.enmotive.com/default_event_headers/0.jpg"
+      },
+      "email": {
+        "header": "",
+        "footer": ""
+      },
+      "logo": "https://s3.amazonaws.com/media.racebx.com/transfer/img/f/f/c/ffc961d4-2919-4db0-9dca-f7d0a8f5ecf8.png"
+    },
+    "description": null,
+    "sections": [],
+    "results_posted": 1,
+    "results_corrections": 1,
+    "results_certificate": false,
+    "photos_available": false,
+    "photos_faces": "1",
+    "photos_social_sharing": 1,
+    "results_searchable": "1",
+    "no_bib": 0,
+    "badges_available": false,
+    "color": "#1f306d",
+    "sharing": {
+      "twitter": {
+        "default_text": "I ran 2023 UW Medicine Seattle Marathon and Half Marathon today!! {{page_link}}"
+      },
+      "facebook": {
+        "default_text": "I ran 2023 UW Medicine Seattle Marathon and Half Marathon today!! {{page_link}}"
+      },
+      "email": {
+        "default_subject": "I ran 2023 UW Medicine Seattle Marathon and Half Marathon today!! {{page_link}}",
+        "default_body": "I ran 2023 UW Medicine Seattle Marathon and Half Marathon today!!\\n Check out my results and photos\\n {{page_link}}"
+      }
+    }
+  },
+  "Ads": {
+    "Interstitial RPE": []
+  },
+  "category": {
+    "registered": {
+      "id": "7a602ad2-9849-42a2-8342-93eac78133e6",
+      "name": "IN-PERSON FULL MARATHON RUN",
+      "type": "participant",
+      "date": "2023-11-26",
+      "distance": {
+        "quantity": 26.2,
+        "unit": "mi",
+        "name": "Marathon"
+      },
+      "results_log_allow": 0,
+      "user_photo_upload_allow": 0
+    },
+    "completed": {
+      "id": "f7087add-5789-4dfe-9052-aefc176b37de",
+      "name": "Marathon",
+      "date": "2023-11-26",
+      "distance": {
+        "quantity": 26.2,
+        "unit": "mi",
+        "name": "Marathon"
+      }
+    }
+  },
+  "corral": {
+    "id": null,
+    "name": null,
+    "wave": null,
+    "time": {
+      "close": null,
+      "start": null
+    }
+  },
+  "team": {
+    "display_title": "Team",
+    "id": null,
+    "name": null,
+    "bib": null
+  },
+  "shipments": [],
+  "result": {
+    "provider": 1,
+    "hometown": "Edmonds, WA",
+    "race_name": "Marathon",
+    "primary_bracket": "",
+    "category_id": "f7087add-5789-4dfe-9052-aefc176b37de",
+    "duration": [],
+    "rankings": [],
+    "splits": [
+      {
+        "name": "7 Mile",
+        "time": "00:59:19",
+        "pace": "08:29",
+        "pace_unit": "min/mi",
+        "time_of_day": "8:01:00AM",
+        "distance": {
+          "quantity": "11.265",
+          "unit": "Kilometer"
+        }
+      },
+      {
+        "name": "13.1 Mile",
+        "time": "01:49:26",
+        "pace": "08:22",
+        "pace_unit": "min/mi",
+        "time_of_day": "8:51:07AM",
+        "distance": {
+          "quantity": "21.082",
+          "unit": "Kilometer"
+        }
+      },
+      {
+        "name": "15.6 Mile",
+        "time": "02:09:56",
+        "pace": "08:20",
+        "pace_unit": "min/mi",
+        "time_of_day": "9:11:37AM",
+        "distance": {
+          "quantity": "25.106",
+          "unit": "Kilometer"
+        }
+      }
+    ],
+    "videos": [],
+    "finished": false,
+    "disqualified": false
+  },
+  "hometown": "Edmonds, WA",
+  "photo": null
+}
