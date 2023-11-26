@@ -2,7 +2,6 @@ import dash
 from dash import dcc, html, Input, Output
 import requests
 import json
-import time
 
 app = dash.Dash(__name__)
 
@@ -13,7 +12,7 @@ runner_ids = [
 ]
 
 app.layout = html.Div([
-    html.H1('Runner Splits'),
+    html.H1('Runner Splits', className="text-2xl mb-4"),
     dcc.Interval(
         id='interval-component',
         interval=10 * 1000,  # in milliseconds
@@ -22,26 +21,27 @@ app.layout = html.Div([
     html.Table(
         id='splits-table',
         children=[
-            html.Thead(
-                html.Tr([
-                    html.Th('Name'),
-                    html.Th('Split Name'),
-                    html.Th('Pace'),
-                    html.Th('Time')
-                ])
-            ),
-            html.Tbody([]),
+            html.Tbody(id='table-body', className="border-t border-b"),
         ],
+        className="w-full border-collapse"
     ),
 ])
 
-
 @app.callback(
-    Output('splits-table', 'children'),
+    Output('table-body', 'children'),
     Input('interval-component', 'n_intervals')
 )
 def update_splits_table(n_intervals):
     splits_table = []
+
+    # Create the header row with increased spacing
+    splits_table.append(html.Tr([
+        html.Th('   Name   ', className="px-8 py-2 bg-gray-200"),
+        html.Th('   Split Name   ', className="px-8 py-2 bg-gray-200"),
+        html.Th('   Time of Day  ', className="px-8 py-2 bg-gray-200"),
+        html.Th('  Pace  - ', className="px-8 py-2 bg-gray-200"),
+        html.Th('   Elapsed Time   ', className="px-8 py-2 bg-gray-200")
+    ]))
     
     for runner_id in runner_ids:
         api_url = f'https://api.enmotive.grepcv.com/prod/events/2023-uw-medicine-seattle-marathon-and-half-marathon/{runner_id}'
@@ -56,10 +56,11 @@ def update_splits_table(n_intervals):
                 splits_data = data['result']['splits']
                 for split in splits_data:
                     splits_table.append(html.Tr([
-                        html.Td(runner_name),
-                        html.Td(split['name']),
-                        html.Td(split['pace']),
-                        html.Td(split['time'])
+                        html.Td(runner_name, className="px-8 py-2"),
+                        html.Td(split['name'], className="px-8 py-2"),
+                        html.Td(split['time_of_day'], className="px-8 py-2"),
+                        html.Td(split['pace'], className="px-8 py-2"),
+                        html.Td(split['time'], className="px-8 py-2"),
                     ]))
             else:
                 print(f"No splits found for runner: {runner_id}")
@@ -68,7 +69,6 @@ def update_splits_table(n_intervals):
             print(f"Error fetching data for runner {runner_id}: {str(e)}")
     
     return splits_table
-
 
 if __name__ == '__main__':
     app.run_server(debug=True)
