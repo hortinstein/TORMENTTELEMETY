@@ -132,10 +132,33 @@
     "provider": 1,
     "hometown": "Redmond, WA",
     "race_name": "Marathon",
-    "primary_bracket": "",
+    "primary_bracket": "Overall",
     "category_id": "f7087add-5789-4dfe-9052-aefc176b37de",
-    "duration": [],
-    "rankings": [],
+    "duration": {
+      "chip": "04:39:03",
+      "pace": "00:10:39",
+      "pace_unit": "min/mi"
+    },
+    "rankings": [
+      {
+        "order": 1,
+        "name": "Overall",
+        "rank": "1,088th",
+        "size": "1,669"
+      },
+      {
+        "order": 19,
+        "name": "Male",
+        "rank": "816th",
+        "size": "1,171"
+      },
+      {
+        "order": 24,
+        "name": "Male 35-39",
+        "rank": "104th",
+        "size": "136"
+      }
+    ],
     "splits": [
       {
         "name": "7 Mile",
@@ -169,10 +192,54 @@
           "quantity": "25.106",
           "unit": "Kilometer"
         }
+      },
+      {
+        "name": "16 Mile",
+        "time": "02:29:43",
+        "pace": "09:22",
+        "pace_unit": "min/mi",
+        "time_of_day": "9:31:22AM",
+        "distance": {
+          "quantity": "25.750",
+          "unit": "Kilometer"
+        }
+      },
+      {
+        "name": "21 Mile",
+        "time": "03:29:02",
+        "pace": "09:58",
+        "pace_unit": "min/mi",
+        "time_of_day": "10:30:41AM",
+        "distance": {
+          "quantity": "33.796",
+          "unit": "Kilometer"
+        }
+      },
+      {
+        "name": "23 Mile",
+        "time": "03:51:13",
+        "pace": "10:04",
+        "pace_unit": "min/mi",
+        "time_of_day": "10:52:52AM",
+        "distance": {
+          "quantity": "37.015",
+          "unit": "Kilometer"
+        }
+      },
+      {
+        "name": "Full Course",
+        "time": "04:39:03",
+        "pace": "10:39",
+        "pace_unit": "min/mi",
+        "time_of_day": "11:40:42AM",
+        "distance": {
+          "quantity": "42.195",
+          "unit": "Kilometer"
+        }
       }
     ],
     "videos": [],
-    "finished": false,
+    "finished": true,
     "disqualified": false
   },
   "hometown": "Redmond, WA",

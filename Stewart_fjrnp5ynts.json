@@ -132,10 +132,33 @@
     "provider": 1,
     "hometown": "Seattle, WA",
     "race_name": "Marathon",
-    "primary_bracket": "",
+    "primary_bracket": "Overall",
     "category_id": "f7087add-5789-4dfe-9052-aefc176b37de",
-    "duration": [],
-    "rankings": [],
+    "duration": {
+      "chip": "03:24:44",
+      "pace": "00:07:49",
+      "pace_unit": "min/mi"
+    },
+    "rankings": [
+      {
+        "order": 1,
+        "name": "Overall",
+        "rank": "183rd",
+        "size": "1,669"
+      },
+      {
+        "order": 19,
+        "name": "Male",
+        "rank": "173rd",
+        "size": "1,171"
+      },
+      {
+        "order": 24,
+        "name": "Male 35-39",
+        "rank": "25th",
+        "size": "136"
+      }
+    ],
     "splits": [
       {
         "name": "7 Mile",
@@ -180,10 +203,43 @@
           "quantity": "25.750",
           "unit": "Kilometer"
         }
+      },
+      {
+        "name": "21 Mile",
+        "time": "02:41:25",
+        "pace": "07:42",
+        "pace_unit": "min/mi",
+        "time_of_day": "9:43:03AM",
+        "distance": {
+          "quantity": "33.796",
+          "unit": "Kilometer"
+        }
+      },
+      {
+        "name": "23 Mile",
+        "time": "02:54:26",
+        "pace": "07:36",
+        "pace_unit": "min/mi",
+        "time_of_day": "9:56:05AM",
+        "distance": {
+          "quantity": "37.015",
+          "unit": "Kilometer"
+        }
+      },
+      {
+        "name": "Full Course",
+        "time": "03:24:44",
+        "pace": "07:49",
+        "pace_unit": "min/mi",
+        "time_of_day": "10:26:22AM",
+        "distance": {
+          "quantity": "42.195",
+          "unit": "Kilometer"
+        }
       }
     ],
     "videos": [],
-    "finished": false,
+    "finished": true,
     "disqualified": false
   },
   "hometown": "Seattle, WA",
